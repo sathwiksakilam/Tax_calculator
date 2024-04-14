@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 450;
 }
 
 #tax_calc {
@@ -18,7 +22,7 @@
 #tax_calc_in {
     border: 2px solid grey;
     width: 55vw;
-    height: 60vh;
+    height: 70vh;
     padding: 7vh 5vw;
     box-sizing: border-box;
     display: flex;
@@ -32,7 +36,7 @@
 .inner_box {
     width: 42vw;
     height: 8vh;
-    margin: 1vh;
+    margin: 2vh;
     /* border:2px solid blue; */
     box-sizing: border-box;
     border-radius: 20px;
@@ -43,6 +47,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 2vh;
 }
 
 h3 {
@@ -55,6 +60,11 @@ h3 {
     box-sizing: border-box;
     border: 2px solid grey;
     border-radius: 5px;
+}
+
+.input_box::placeholder{
+    left:300px;
+    /* color: #999; */
 }
 
 #submit_btn {

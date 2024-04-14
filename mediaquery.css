@@ -1,24 +1,59 @@
-@media screen and (max-width:595px) {
-    h3 {
-        font-size: 3vw;
-    }
 
-    .input_box {
-        height: 7vw;
-    }
-
-    #submit_btn {
-        height: 5vw;
-    }
-
+@media only screen and (max-width: 768px) {
     #tax_calc_in {
-        width: 80vw;
-        height: 80vw;
+      width: 80vw;
+      height: auto;
+      padding: 7vh 3vw;
     }
-}
-
-@media screen and (max-width:725px) and (min-width:595px) {
-    .flex_box_inner {
-        margin: 3vw;
+    
+    .inner_box {
+      width: 70vw;
+      margin: 2vh 0;
     }
-}
+  
+    .input_box {
+      width: 68vw;
+    }
+  
+    #submit_btn {
+      width: 60vw;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #tax_calc_in {
+      width: 90vw;
+      padding: 5vh 2vw;
+    }
+    
+    .inner_box {
+      width: 80vw;
+    }
+  
+    .input_box {
+      width: 78vw;
+    }
+  
+    #submit_btn {
+      width: 70vw;
+    }
+  
+    .submit_box {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .submit_text_box {
+      width: 80vw;
+      height: auto;
+    }
+  
+    .close_button button {
+      width: 30vw;
+    }
+  
+    .submit_text_in {
+      font-size: 5vw;
+    }
+  }
+  
