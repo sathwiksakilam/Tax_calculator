@@ -12,11 +12,12 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    /* background-color: grey; */
 }
 
 #tax_calc_in {
     border: 2px solid grey;
-    width: 60vw;
+    width: 55vw;
     height: 60vh;
     padding: 7vh 5vw;
     box-sizing: border-box;
@@ -24,6 +25,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+    /* background-color: grey; */
 }
 
 .inner_box {
@@ -32,6 +35,7 @@
     margin: 1vh;
     /* border:2px solid blue; */
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .flex_box_inner {
@@ -43,7 +47,6 @@
 
 h3 {
     font-size: 3vh;
-    overflow: auto;
 }
 
 .input_box {
@@ -51,6 +54,7 @@ h3 {
     height: 5vh;
     box-sizing: border-box;
     border: 2px solid grey;
+    border-radius: 5px;
 }
 
 #submit_btn {
@@ -75,7 +79,7 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     display: none;
-    width: 100px;
+    width: 150px;
     text-align: center;
 }
 

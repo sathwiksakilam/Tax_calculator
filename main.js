@@ -2,8 +2,9 @@ const form = document.getElementById('tax_form');
 const inputs = form.querySelectorAll('.input_box');
 const errorIcons = form.querySelectorAll('.error_icon');
 const Info = {};
-const tooltips = document.querySelectorAll('.hover_cls');
+const tooltip = document.querySelector('.hover_cls');
 const submit_box = document.querySelector('.submit_box');
+const tax_form = document.querySelector('#tax_form');
 // Function to create and manage tooltips
 
 window.onload = function() {
@@ -23,6 +24,7 @@ function addTooltip(element, content) {
     element.addEventListener('mouseover', () => {
         tooltipElement.style.display = 'block';
         // tooltipElement.style.zIndex = '10';
+        // tax_form.style.zIndex = '-1';
     });
 
     element.addEventListener('mouseout', () => {
@@ -34,13 +36,10 @@ function isNumeric(value) {
     return /^\d+$/.test(value);
 }
 
-console.log(isNumeric('1') == true);
+// console.log(isNumeric('1') == true);
 
-
-tooltips.forEach(tooltip => {
-    const content = tooltip.getAttribute('data-tooltip');
-    addTooltip(tooltip, content);
-});
+const textContent = tooltip.getAttribute('data-tooltip');
+addTooltip(tooltip, textContent);
 
 errorIcons.forEach(errIcon => {
     const content = errIcon.getAttribute('err_message');
@@ -53,7 +52,7 @@ function toggleErrorMessage(errorIcon, show) {
 }
 
 function validateInput(input, errorIcon) {
-    if (!isNumeric(input.value)) {
+    if (!isNumeric(input.value) || input.value==" ") {
         toggleErrorMessage(errorIcon, true);
         return false;
     } else {
