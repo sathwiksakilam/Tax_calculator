@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     #tax_calc_in {
       width: 80vw;
       height: auto;
@@ -8,7 +8,7 @@
     
     .inner_box {
       width: 70vw;
-      margin: 2vh 0;
+      margin: 3vh 0;
     }
   
     .input_box {
