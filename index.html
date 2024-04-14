@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+
+</head>
+
+<body>
+    <section id="tax_calc">
+        <form id="tax_form">
+            <div id="tax_calc_in">
+                <div class="inner_box">
+                    <h3 class="inner_h3"> Enter gross annual income <i class="fa fa-question-circle hover_cls"
+                            data-tooltip="Gross annual income is your total salary in a year before any deductions"></i>
+                    </h3>
+                    <div>
+                        <input type="text" name="Gross_income" class="input_box"
+                            placeholder="Enter gross annual income">
+                        <i class="fa fa-exclamation-circle error_icon" style="display: none;"
+                            err_message="Please enter numbers only"></i>
+                    </div>
+                </div>
+                <div class="inner_box">
+                    <h3 class="inner_h3"> Enter extra income <i class="fa fa-question-circle hover_cls"></i> </h3>
+                    <div>
+                        <input type="text" name="extra_income" class="input_box"
+                            placeholder="Enter extra income from other sources">
+                        <i class="fa fa-exclamation-circle error_icon" style="display: none;"
+                            err_message="Please enter numbers only"></i>
+                    </div>
+                </div>
+                <div class="inner_box">
+                    <h3 class="inner_h3"> Enter age group <i class="fa fa-question-circle hover_cls"></i></h3>
+                    <div>
+                        <input type="number" name="age_group" class="input_box">
+                        <!-- <i class="fa fa-exclamation-circle error_icon" style="display: none;"
+                            err_message="Please enter numbers only"></i> -->
+                    </div>
+                </div>
+                <div class="inner_box">
+                    <h3> Enter total applicable deductions <i class="fa fa-question-circle hover_cls"></i> </h3>
+                    <div>
+                        <input type="text" name="total_deductions" class="input_box"
+                            placeholder="Add total applicable deductions">
+                        <i class="fa fa-exclamation-circle error_icon " style="display: none;"
+                            err_message="Please enter numbers only"></i>
+                    </div>
+                </div>
+                <div class="inner_box flex_box_inner">
+                    <input type="submit" value="Submit" id="submit_btn">
+                </div>
+            </div>
+            <div class="submit_box">
+            
+            </div>
+        </form>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

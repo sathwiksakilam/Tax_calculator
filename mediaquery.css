@@ -1,0 +1,24 @@
+@media screen and (max-width:595px) {
+    h3 {
+        font-size: 3vw;
+    }
+
+    .input_box {
+        height: 7vw;
+    }
+
+    #submit_btn {
+        height: 5vw;
+    }
+
+    #tax_calc_in {
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+@media screen and (max-width:725px) and (min-width:595px) {
+    .flex_box_inner {
+        margin: 3vw;
+    }
+}

@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#tax_calc {
+    width: 100vw;
+    height: 100vh;
+    /* border:2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#tax_calc_in {
+    border: 2px solid grey;
+    width: 60vw;
+    height: 60vh;
+    padding: 7vh 5vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner_box {
+    width: 42vw;
+    height: 8vh;
+    margin: 1vh;
+    /* border:2px solid blue; */
+    box-sizing: border-box;
+}
+
+.flex_box_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h3 {
+    font-size: 3vh;
+    overflow: auto;
+}
+
+.input_box {
+    width: 40vw;
+    height: 5vh;
+    box-sizing: border-box;
+    border: 2px solid grey;
+}
+
+#submit_btn {
+    width: 28vw;
+    height: 6vh;
+    background-color: blue;
+    color: white;
+    box-sizing: border-box;
+}
+
+.hover_cls {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 100px;
+    text-align: center;
+}
+
+.error_icon {
+    position: relative;
+}
+
+.err_tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: 100px;
+    text-align: center;
+}
+
+.submit_box{
+    display:none;
+    width:80vw;
+    height:50vh;
+    border:2px solid grey;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+}
+.submit_text_box{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    width:50vw;
+    /* border: 2px solid red; */
+}
+.close_button{
+    display:block;
+    text-align:center;
+    margin:6vw;
+    width:50vw;
+    padding:auto;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+.close_button button{
+    background-color: blue;
+    color:white;
+    width:9vw;
+    height: 5vh;
+    text-align: center;
+}
+.submit_text_in{
+    /* inner box of submit_box */
+    font-size: 3vw; 
+}
